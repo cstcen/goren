@@ -1,0 +1,8 @@
+generate:
+  gin-server: true
+  models: true
+  embedded-spec: true
+import-mapping:
+  https://doc.xk5.com/specs/externalref/schemas.yaml: {{.ModuleName}}/goren/{{.PackageNameApi}}/gen/schemas
+  https://doc.xk5.com/specs/externalref/responses.yaml: {{.ModuleName}}/goren/{{.PackageNameApi}}/gen/responses
+  https://doc.xk5.com/specs/externalref/parameters.yaml: {{.ModuleName}}/goren/{{.PackageNameApi}}/gen/parameters

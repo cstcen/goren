@@ -1,0 +1,8 @@
+package: schemas
+generate:
+  models: true
+  embedded-spec: true
+output:
+  goren/{{.PackageNameApi}}/gen/schemas/externalref.gen.go
+output-options:
+  skip-prune: true

@@ -1,0 +1,10 @@
+package: parameters
+generate:
+  models: true
+  embedded-spec: true
+output:
+  goren/{{.PackageNameApi}}/gen/parameters/externalref.gen.go
+output-options:
+  skip-prune: true
+import-mapping:
+  https://doc.xk5.com/specs/externalref/schemas.yaml: {{.ModuleName}}/goren/{{.PackageNameApi}}/gen/schemas
